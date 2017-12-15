@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>ABOUT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <style>
+
+    /*start of stylesheet*/
+
+    /*start of page header */
+    #img_logo {
+      float: left;
+      margin-left: -490px;
+    }
+
+    #img_icon {
+      margin-top: -20px;
+    }
+
+    #Search {
+      margin-left: 145mm;
+      margin-top: 5mm;
+    }
+
+      input[type=text] {
+        width: 200px;
+        height: 30px;
+        margin-top: -10px;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        background-color: white;
+        padding-top:-10px;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+    }
+
+    button {
+      width: 35px;
+      background-color:white;
+      color: white;
+      padding: -3px -1px;
+      margin: 0px;
+      border: 1px solid #ccc;
+      font-family: 'Lato', sans-serif;
+      margin-top: -10mm;
+      height: 35px;
+      margin-left: 2px;
+    }
+
+    @media (max-width:1000px) {
+      input[type=text] {
+        width: 200px;
+        margin: 0%;
+        padding: 0%;
+      }
+
+      button {
+        width: 35px;
+        margin: 0%;
+        padding: 0%;
+      }
+    }
+
+    #pageHeader {
+      width: 100%;
+      grid-area: header;
+      height: 350px;
+      background-color: #444;
+      background-color: #e5e3e3;
+      color: #444;
+    }
+
+    @media(max-width:1000px){
+      #pageHeader {
+        width: 100%;
+        margin: 0%;
+      }
+    }
+
+    #PageHeader1 {
+      text-align: center;
+      margin-top: 40mm;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: white;
+      padding-left: 505px;
+      height: 57px;
+      font-family: 'Lato', sans-serif;
+      position: fixed;
+      width: 100%;
+    }
+
+    li {
+      float: left;
+      margin-top: -10mm;
+    }
+
+    li a {
+      display: block;
+      color: #444;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    li a:hover {
+      color: indianred;
+    }
+
+    /*end of page header*/
+
+    /*body scetion*/
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "article article article"
+        "article article article"
+        "footer footer footer";
+      grid-template-rows: 60px 1fr 60px;
+      grid-template-columns: 20% 1fr 15%;
+      grid-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+    /*start of mainArticle*/
+    #mainArticle {
+      grid-area: article;
+      height: 300px;
+      margin-top: 0px;
+      color: #444;
+      }
+
+      /*heading 3 styling*/
+      h3 {
+        color: #ed524d;
+        font-size: 17px;
+        margin-top: -10px;
+      }
+
+      /*grid section layout*/
+      #grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-gap: 2vw;
+       margin-top: 80mm;
+     }
+     #grid > div{
+       background: white;
+     }
+
+     /*end of layout*/
+
+     /*box class section*/
+
+     /*box a*/
+      .box-a {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        width: 600px;
+        height: 300px;
+        margin-left: 180px;
+      }
+
+      /*box b*/
+      .box-b {
+        width: 520px;
+        margin-left: 0px;
+        height: 300px;
+      }
+
+      @media (max-width:1000px) {
+        .box-a {
+          width: 100%;
+          margin-left: 50mm;
+        }
+
+        .box-b {
+          width: 100%;
+          margin-top: 50mm;
+        }
+      }
+
+      /*box c*/
+      .box-c {
+        width: 800px;
+        height: 400px;
+        margin-top: -55px;
+        margin-left: 10px;
+      }
+
+      /*box d*/
+      .box-d {
+        width: 520px;
+        margin-top: -55px;
+        margin-left: 0px;
+      }
+
+      /*coloumn section*/
+
+      /*c1*/
+      #column1 {
+        float: left;
+        width: 200px;
+        height: 150px;
+        background-color: white;
+      }
+
+      /*c2*/
+      #column2 {
+        float: left;
+        width: 200px;
+        height: 150px;
+        background-color: white;
+        margin-left: 50px;
+      }
+
+      /*c4*/
+      #column4 {
+        float:right;
+        width: 200px;
+        height: 150px;
+        background-color: white;
+        margin-right: 70px;
+        margin-top: 40px;
+
+      }
+
+      /*c5*/
+      #column5 {
+        float:right;
+        width: 200px;
+        height: 150px;
+        background-color: white;
+        margin-top: 40px;
+        margin-right: 50px;
+
+      }
+
+      /*end of column section*/
+    /*different color boxes*/
+      #bluebox{
+        width: 220px;
+        height: 300px;
+        background-color:#333;
+        float: left;
+        margin-left: 275px;
+        margin-bottom: 22px;
+      }
+
+      #yellowbox {
+        width: 220px;
+        height: 300px;
+        background-color: #333;
+        margin-left: 755px;
+        margin-bottom: 42px;
+      }
+
+      #greenbox {
+        width: 220px;
+        height: 300px;
+        background-color: #333;
+        float: left;
+        margin-top: -5px;
+        margin-left: 275px;
+      }
+
+      #redbox {
+        width: 220px;
+        height: 300px;
+        background-color: #333;
+        float: left;
+        margin-top: -5px;
+        margin-left: 280px;
+      }
+      /*end of boxes*/
+
+    /*team itself*/
+      .team {
+        margin-left: 240px;
+        width: 220px;
+        margin-top: -85mm;
+      }
+
+      .images {
+        float: left;
+        display: inline;
+        margin-left: -20px;
+      }
+
+      /*end of team*/
+
+      /*end of mainArticle*/
+
+    /*sub article styling*/
+      #sub_article {
+        margin-top: 20mm;
+      }
+
+      /*pagearticle3 styling*/
+      #pagearticle3 {
+        grid-area: article;
+        height: 280px;
+        background-color: black;
+        margin-top: 400px;
+        padding-left: 200px;
+        width: 100%;
+      }
+
+      /*counter*/
+      .counter {
+        display: table-cell;
+        margin:1.5%;
+        font-size:50px;
+        background-color: black;
+        width:200px;
+        border-radius: 50%;
+        padding-left: 10mm;
+        height:200px;
+        vertical-align: middle;
+        color: white;
+
+      }
+    /*subscribe section*/
+      #subscribe {
+        height: 200px;
+        background-color: white;
+        text-align: center;
+      }
+
+      #text1 {
+        width: 400px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border-radius: 4px;
+      }
+
+      #reset {
+        width: 100px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border-radius: 4px;
+        background-color: #ed524d;
+        color: white;
+      }
+
+      /*end of subscribe section*/
+
+      /*input section*/
+      #input[type=text], select {
+        width: 400px;
+        height: 45px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        margin-right: 50mm;
+      }
+
+      #input[type=submit] {
+      width: 100px;
+      background-color:#ed524d;
+      color: white;
+      padding: 14px 8px;
+      margin: 8px 0;
+      border: 2px solid #ed524d;
+      border-radius: 3px;
+      font-family: 'Lato', sans-serif;
+      float: left;
+      margin-left: 210mm;
+      margin-top: -12mm;
+      height: 45px;
+    }
+    /*end of input section*/
+
+    /*end of pagearticle3 styling*/
+
+    #carousel_inner {
+        width: 100%;
+        overflow-x: hidden;
+        background: #F0F0F0;
+        height: 100px;
+    }
+
+    #carousel_ul li img {
+        width: 200px;
+        height: 110px;
+        margin-top: -1mm;
+    }
+
+    #carousel_ul {
+        position: relative;
+        left: -210px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        width: 9999px;
+
+    }
+
+    #carousel_ul li {
+        float: left;
+        width: 200px;
+        padding: 0px;
+        height: 610px;
+        background: #000000;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #carousel_ul li img {
+        cursor: pointer;
+        cursor: hand;
+        border: 0px;
+    }
+
+    #left_scroll, #right_scroll {
+        float: left;
+        height: 630px;
+        width: 35px;
+        margin-left: 20px;
+    }
+
+    #left_scroll img, #right_scroll img {
+        border: 0;
+     /* remove the default border of linked image */
+    /*styling*/
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    #left_scroll img {
+        width: 25px;
+        height: 625px;
+    }
+
+    #right_scroll img {
+        width: 25px;
+        height: 625px;
+    }
+    /*end of mlogos section*/
+
+      /*footer section*/
+
+      /*flex container*/
+    .flex-container {
+      display: flex;
+      background-color: none;
+      margin-top: 0mm;
+    }
+
+    .flex-container>div {
+      background-color: none;
+      width: 350px;
+      height: 190px;
+      margin: 10px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /*end of flex container*/
+
+    /*lists*/
+    h2{
+      font-size: 25px;
+      border-bottom: 2px solid white;
+    }
+    /*span styling*/
+    span.heading {
+      border-bottom: 2px solid #ed524d;
+    }
+
+    /*paragraph styling*/
+    .paratext {
+      color: black;
+    }
+
+    /*anchor tag styling*/
+    a {
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    a:hover {
+      color: #ed524d;
+    }
+    /*end of anchor styling*/
+
+    .icon {
+      float: left;
+      margin-left: 25mm;
+    }
+
+    /*end of lists*/
+
+    /*paragraph section*/
+    #p2 {
+      width: 200px;
+      margin-left: 10mm;
+    }
+
+    #p3 {
+      margin-right: 26mm;
+    }
+
+    #p4 {
+      margin-right: 30mm;
+    }
+    /*end of paragraph section*/
+
+    /*flex box*/
+    .flex-box {
+      display: flex;
+      background-color: #ed524d;
+      margin-top: 0mm;
+    }
+
+    .flex-box>div {
+      background-color: none;
+      width: 700px;
+      height: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: white;
+      margin-top: 12px;
+    }
+    /*end of flex box*/
+
+    /*extras*/
+    #die {
+      margin-left: -10mm;
+      margin-top: 12px;
+    }
+
+    .pictures {
+      margin-top: 13px;
+      margin-left:-100px;
+    }
+
+    #f {
+      margin-left: 165mm;
+      margin-top: 25px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+
+    h5 {
+      font-size: 13px;
+    }
+
+    /*end of extras*/
+    /*end of stylesheet*/
+
+
+    /*Stylesheet for circular progress bar*/
+
+    .progress-circle {
+       font-size: 20px;
+       margin: 20px;
+       position: relative; /* so that children can be absolutely positioned */
+       padding: 0;
+       width: 10em;
+       height: 10em;
+       background-color: black;
+       line-height: 5em;
+       float: left;
+       margin-top: 15mm;
+    }
+
+    .data {
+      color: white;
+      margin-top: 20mm;
+      margin-left: -5mm;
+    }
+
+    .progress-circle:after{
+        border: none;
+        position: absolute;
+        top: 0.35em;
+        left: 0.35em;
+        text-align: center;
+        display: block;
+        border-radius: 50%;
+        width: 4.3em;
+        height: 4.3em;
+        background-color: black;
+        content: " ";
+    }
+    /* Text inside the control */
+    .progress-circle span {
+        position: absolute;
+        line-height: 5em;
+        width: 5em;
+        text-align: center;
+        display: block;
+        color: white;
+        z-index: 2;
+    }
+    .left-half-clipper {
+       /* a round circle */
+       border-radius: 50%;
+       width: 5em;
+       height: 5em;
+       position: absolute; /* needed for clipping */
+       clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/
+    }
+    /* when p>50, don't clip left half*/
+    .progress-circle.over50 .left-half-clipper {
+       clip: rect(auto,auto,auto,auto);
+    }
+    .value-bar {
+       /*This is an overlayed square, that is made round with the border radius,
+       then it is cut to display only the left half, then rotated clockwise
+       to escape the outer clipping path.*/
+       position: absolute; /*needed for clipping*/
+       clip: rect(0, 2.5em, 5em, 0);
+       width: 5em;
+       height: 5em;
+       border-radius: 50%;
+       border: 0.45em solid #ed524d; /*The border is 0.35 but making it larger removes visual artifacts */
+       /*background-color: #4D642D;*/ /* for debug */
+       box-sizing: border-box;
+
+    }
+    /* Progress bar filling the whole right half for values above 50% */
+    .progress-circle.over50 .first50-bar {
+       /*Progress bar for the first 50%, filling the whole right half*/
+       position: absolute; /*needed for clipping*/
+       clip: rect(0, 5em, 5em, 2.5em);
+       background-color: #ed524d;
+       border-radius: 50%;
+       width: 5em;
+       height: 5em;
+    }
+    .progress-circle:not(.over50) .first50-bar{ display: none; }
+
+
+    /* Progress bar rotation position */
+    .progress-circle.p0 .value-bar { display: none; }
+    .progress-circle.p1 .value-bar { transform: rotate(4deg); }
+    .progress-circle.p2 .value-bar { transform: rotate(7deg); }
+    .progress-circle.p3 .value-bar { transform: rotate(11deg); }
+    .progress-circle.p4 .value-bar { transform: rotate(14deg); }
+    .progress-circle.p5 .value-bar { transform: rotate(18deg); }
+    .progress-circle.p6 .value-bar { transform: rotate(22deg); }
+    .progress-circle.p7 .value-bar { transform: rotate(25deg); }
+    .progress-circle.p8 .value-bar { transform: rotate(29deg); }
+    .progress-circle.p9 .value-bar { transform: rotate(32deg); }
+    .progress-circle.p10 .value-bar { transform: rotate(36deg); }
+    .progress-circle.p11 .value-bar { transform: rotate(40deg); }
+    .progress-circle.p12 .value-bar { transform: rotate(43deg); }
+    .progress-circle.p13 .value-bar { transform: rotate(47deg); }
+    .progress-circle.p14 .value-bar { transform: rotate(50deg); }
+    .progress-circle.p15 .value-bar { transform: rotate(54deg); }
+    .progress-circle.p16 .value-bar { transform: rotate(58deg); }
+    .progress-circle.p17 .value-bar { transform: rotate(61deg); }
+    .progress-circle.p18 .value-bar { transform: rotate(65deg); }
+    .progress-circle.p19 .value-bar { transform: rotate(68deg); }
+    .progress-circle.p20 .value-bar { transform: rotate(72deg); }
+    .progress-circle.p21 .value-bar { transform: rotate(76deg); }
+    .progress-circle.p22 .value-bar { transform: rotate(79deg); }
+    .progress-circle.p23 .value-bar { transform: rotate(83deg); }
+    .progress-circle.p24 .value-bar { transform: rotate(86deg); }
+    .progress-circle.p25 .value-bar { transform: rotate(90deg); }
+    .progress-circle.p26 .value-bar { transform: rotate(94deg); }
+    .progress-circle.p27 .value-bar { transform: rotate(97deg); }
+    .progress-circle.p28 .value-bar { transform: rotate(101deg); }
+    .progress-circle.p29 .value-bar { transform: rotate(104deg); }
+    .progress-circle.p30 .value-bar { transform: rotate(108deg); }
+    .progress-circle.p31 .value-bar { transform: rotate(112deg); }
+    .progress-circle.p32 .value-bar { transform: rotate(115deg); }
+    .progress-circle.p33 .value-bar { transform: rotate(119deg); }
+    .progress-circle.p34 .value-bar { transform: rotate(122deg); }
+    .progress-circle.p35 .value-bar { transform: rotate(126deg); }
+    .progress-circle.p36 .value-bar { transform: rotate(130deg); }
+    .progress-circle.p37 .value-bar { transform: rotate(133deg); }
+    .progress-circle.p38 .value-bar { transform: rotate(137deg); }
+    .progress-circle.p39 .value-bar { transform: rotate(140deg); }
+    .progress-circle.p40 .value-bar { transform: rotate(144deg); }
+    .progress-circle.p41 .value-bar { transform: rotate(148deg); }
+    .progress-circle.p42 .value-bar { transform: rotate(151deg); }
+    .progress-circle.p43 .value-bar { transform: rotate(155deg); }
+    .progress-circle.p44 .value-bar { transform: rotate(158deg); }
+    .progress-circle.p45 .value-bar { transform: rotate(162deg); }
+    .progress-circle.p46 .value-bar { transform: rotate(166deg); }
+    .progress-circle.p47 .value-bar { transform: rotate(169deg); }
+    .progress-circle.p48 .value-bar { transform: rotate(173deg); }
+    .progress-circle.p49 .value-bar { transform: rotate(176deg); }
+    .progress-circle.p50 .value-bar { transform: rotate(180deg); }
+    .progress-circle.p51 .value-bar { transform: rotate(184deg); }
+    .progress-circle.p52 .value-bar { transform: rotate(187deg); }
+    .progress-circle.p53 .value-bar { transform: rotate(191deg); }
+    .progress-circle.p54 .value-bar { transform: rotate(194deg); }
+    .progress-circle.p55 .value-bar { transform: rotate(198deg); }
+    .progress-circle.p56 .value-bar { transform: rotate(202deg); }
+    .progress-circle.p57 .value-bar { transform: rotate(205deg); }
+    .progress-circle.p58 .value-bar { transform: rotate(209deg); }
+    .progress-circle.p59 .value-bar { transform: rotate(212deg); }
+    .progress-circle.p60 .value-bar { transform: rotate(216deg); }
+    .progress-circle.p61 .value-bar { transform: rotate(220deg); }
+    .progress-circle.p62 .value-bar { transform: rotate(223deg); }
+    .progress-circle.p63 .value-bar { transform: rotate(227deg); }
+    .progress-circle.p64 .value-bar { transform: rotate(230deg); }
+    .progress-circle.p65 .value-bar { transform: rotate(234deg); }
+    .progress-circle.p66 .value-bar { transform: rotate(238deg); }
+    .progress-circle.p67 .value-bar { transform: rotate(241deg); }
+    .progress-circle.p68 .value-bar { transform: rotate(245deg); }
+    .progress-circle.p69 .value-bar { transform: rotate(248deg); }
+    .progress-circle.p70 .value-bar { transform: rotate(252deg); }
+    .progress-circle.p71 .value-bar { transform: rotate(256deg); }
+    .progress-circle.p72 .value-bar { transform: rotate(259deg); }
+    .progress-circle.p73 .value-bar { transform: rotate(263deg); }
+    .progress-circle.p74 .value-bar { transform: rotate(266deg); }
+    .progress-circle.p75 .value-bar { transform: rotate(270deg); }
+    .progress-circle.p76 .value-bar { transform: rotate(274deg); }
+    .progress-circle.p77 .value-bar { transform: rotate(277deg); }
+    .progress-circle.p78 .value-bar { transform: rotate(281deg); }
+    .progress-circle.p79 .value-bar { transform: rotate(284deg); }
+    .progress-circle.p80 .value-bar { transform: rotate(288deg); }
+    .progress-circle.p81 .value-bar { transform: rotate(292deg); }
+    .progress-circle.p82 .value-bar { transform: rotate(295deg); }
+    .progress-circle.p83 .value-bar { transform: rotate(299deg); }
+    .progress-circle.p84 .value-bar { transform: rotate(302deg); }
+    .progress-circle.p85 .value-bar { transform: rotate(306deg); }
+    .progress-circle.p86 .value-bar { transform: rotate(310deg); }
+    .progress-circle.p87 .value-bar { transform: rotate(313deg); }
+    .progress-circle.p88 .value-bar { transform: rotate(317deg); }
+    .progress-circle.p89 .value-bar { transform: rotate(320deg); }
+    .progress-circle.p90 .value-bar { transform: rotate(324deg); }
+    .progress-circle.p91 .value-bar { transform: rotate(328deg); }
+    .progress-circle.p92 .value-bar { transform: rotate(331deg); }
+    .progress-circle.p93 .value-bar { transform: rotate(335deg); }
+    .progress-circle.p94 .value-bar { transform: rotate(338deg); }
+    .progress-circle.p95 .value-bar { transform: rotate(342deg); }
+    .progress-circle.p96 .value-bar { transform: rotate(346deg); }
+    .progress-circle.p97 .value-bar { transform: rotate(349deg); }
+    .progress-circle.p98 .value-bar { transform: rotate(353deg); }
+    .progress-circle.p99 .value-bar { transform: rotate(356deg); }
+    .progress-circle.p100 .value-bar { transform: rotate(360deg); }
+
+    /*end of stylesheet*/
+
+    </style>
+
+  </head>
+  <body>
+
+
+      <header id="pageHeader">
+
+        <ul>
+
+          <!-- Code4CT logo -->
+          <div id="img_logo">
+            <img src="images/cdt.png" alt="pic" width="160" height="57">
+          </div>
+
+          <div id="Search">
+            <!-- Search section -->
+          <input type="text" name="search" placeholder="Search.."><button><img id="img_icon" src="images/searchicon.png" alt="pic" width="15" height="15"></button>
+        </div>
+
+        <!-- Navbar for different sites -->
+        <li><a class="active" href="home.html">HOME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="course(1).html">COURSE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <!-- end of navbar -->
+        </ul>
+
+        <div id="PageHeader1">
+          <h1 id="heading">ABOUT US</h1>
+        </div>
+
+      </header>
+
+      <!-- Main article section -->
+      <article id="mainArticle">
+
+        <!-- Grid layout -->
+        <div id="grid">
+          <div class="box-a">
+            <!-- Box A for information (Welcome To Our Company) -->
+            <h2><span class="heading">WEL</span>COME TO OUR COMPANY</h2>
+            <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
+            <p>These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy. A growing number of permanent job positions that use information technology to deliver a product or a service are becoming available in the local economy.  It is estimated that nearly 75000 such jobs will come online in South Africa within the next five years.  These digital jobs will mostly be driven by the ICT, Business Process Outsourcing (BPO), and the financial services industries.  These are the fastest growing sectors in our economy.  They are also the sectors that have the highest demand for entry-level digital skills.</p>
+
+
+          </div>
+
+          <!-- Box B for image -->
+          <div class="box-b"><img src="images/lap.jpg" alt="phn" width="520" height="300"></div>
+
+          <!-- Box C for image -->
+          <div class="box-c"><img src="images/b.jpg" alt="phn" width="750" height="520"></div>
+
+          <!-- Box D for information (Who We Are) -->
+          <div class="box-d">
+
+            <h2><span class="heading">Who</span> We Are</h2>
+            <p>Code4CT is broadening perspectives about career opportunities for many girls and is showing them that the ICT sector offers exciting career paths with the opportunity for social impact. Through using coding and web building skills, participants are exposed to how IT skills can be applied to solve problems, and they are encouraged to use their knowledge to tackle a real local challenge.</p>
+            <!-- Column 1 (Our Vission) -->
+            <div id="column1">
+
+              <h3>Our Vission</h3>
+              <p>Code4CT exists to see young South African women in positions to drive African innovation.Young women will discover how they can leverage technology for social innovation.</p>
+
+            </div>
+
+            <!-- Column 2 (Our Mission) -->
+            <div id="column2">
+
+              <h3>Our Mission</h3>
+              <p>Code for Cape Town strives to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry.</p>
+
+            </div>
+
+            <!-- Column 4 (Our Support) -->
+            <div id="column4">
+
+              <h3>Our Support</h3>
+              <p>The success of our work depends on the support of likeminded individuals and companies who come alongside us to work towards our mission.</p>
+
+            </div>
+
+            <!-- Column 5 (Our Help) -->
+            <div id="column5">
+
+              <h3>Our Help</h3>
+              <p>When you become fluent with reading and writing, it’s not something that you’re doing just to become a professional writer.</p>
+
+            </div>
+
+          </div>
+          <!-- End of Grid Layout -->
+        </div>
+        <!-- End of Box D information -->
+        <div id="sub_article">
+
+          <div id="bluebox">
+            <img src="images/emma.jpg" alt="phn" width="220" height="300">
+
+            <div class="team">
+
+              <!-- Emma Dicks -->
+              <h4>Emma Dicks</h4>
+
+              <!-- About Emma -->
+              <h5>Founder and Director</h5>
+              <p>Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.</p>
+
+              <!-- Emma's social links -->
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/facebook.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://twitter.com/@code4ct"><img src="images/twitter.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.instagram.com/code4ct/"><img src="images/pinterest2.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/skype.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.linkedin.com/company/9414552/"><img src="images/link.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/google.png" alt="pic" width="21" height="15"></a></div>
+
+            </div>
+
+          </div>
+
+          <div id="yellowbox">
+            <img src="images/andrea.jpg" alt="phn" width="220" height="300">
+
+            <div class="team">
+
+              <!-- Andrea Petersen -->
+              <h4>Andrea Petersen</h4>
+
+              <!-- About Andrea -->
+              <h5>Operations Lead</h5>
+              <p>Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact.When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that Cape Town has to offer.</p>
+
+              <!-- Andrea's social links -->
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/facebook.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://twitter.com/@code4ct"><img src="images/twitter.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.instagram.com/code4ct/"><img src="images/pinterest2.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/skype.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.linkedin.com/company/9414552/"><img src="images/link.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/google.png" alt="pic" width="21" height="15"></a></div>
+
+
+            </div>
+
+          </div>
+
+          <div id="greenbox">
+            <img src="images/tegan.jpg" alt="phn" width="220" height="300">
+
+            <div class="team">
+
+              <!-- Tegan Crous -->
+              <h4>Tegan Crous</h4>
+
+              <!-- About Tegan -->
+              <h5>Program Lead</h5>
+              <p>Tegan heads up the high school program.She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment.</p>
+
+              <!-- Tegan's social links -->
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/facebook.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://twitter.com/@code4ct"><img src="images/twitter.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.instagram.com/code4ct/"><img src="images/pinterest2.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/skype.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.linkedin.com/company/9414552/"><img src="images/link.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/google.png" alt="pic" width="21" height="15"></a></div>
+
+            </div>
+
+          </div>
+
+          <div id="redbox">
+            <img src="images/tracy.jpg" alt="phn" width="220" height="300">
+
+            <div class="team">
+
+              <!-- Tracy-Anne Sikenjana -->
+              <h4>Tracy-Anne Sikenjana</h4>
+
+              <!-- About Tracy -->
+              <h5>Leadership Program Manager</h5>
+              <p>Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. She decided to intern with Code4CT to give back to an organisation that had a large impact on her personal growth and development.</p>
+
+              <!-- Tracy's social links -->
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/facebook.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://twitter.com/@code4ct"><img src="images/twitter.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.instagram.com/code4ct/"><img src="images/pinterest2.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/skype.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.linkedin.com/company/9414552/"><img src="images/link.png" alt="pic" width="15" height="15"></a></div>
+              <div class="images"><a href="https://www.facebook.com/code4ct/"><img src="images/google.png" alt="pic" width="21" height="15"></a></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="pagearticle3">
+
+          <!-- Progress Bar -->
+          <div class="container">
+
+            <!-- Hours Of Coding = 8765 -->
+            <div class="progress-circle over50 p100">
+              <span>8765</span>
+               <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+               </div><p class="data">Hours Of Coding</p>
+            </div>
+
+            <!-- Projects Completed = 3120 -->
+            <div class="progress-circle over50 p83">
+               <span>3120</span>
+               <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+               </div><p class="data">Projects Completed</p>
+            </div>
+
+            <!-- Number Of Girls = 780 -->
+            <div class="progress-circle over50 p66">
+               <span>780</span>
+               <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+               </div><p class="data">Number Of Girls</p>
+            </div>
+
+            <!-- Cups Of Coffee = 3000 -->
+            <div class="progress-circle over50 p77">
+               <span>3000</span>
+               <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+               </div><p class="data">Cups Of Coffee</p>
+            </div>
+
+    </div>
+
+        </div>
+
+        <div id="subscribe">
+          <!-- Subscribe section -->
+          <h1><img src="images/jet.png" alt="subscribe" width="40" height="30">SUBSCRIBE TO US</h1>
+          <p id="para">Individuals and companies may choose to align themselves to our work by becoming a #FriendofCode4CT.</p>
+          <input id="input" type="text" name="firstname" placeholder="enter your email"><input id="input" type="submit" value="Submit">
+          <!-- End of subscribing section -->
+
+          <!-- carousal structure -->
+                <div id='carousel_container'>
+                    <div id='carousel_inner'>
+                        <ul id='carousel_ul'>
+                            <li>
+                                <a href='#'>
+                                  <!-- MOBENZI -->
+                                    <img src="images/mobi.png" alt="pic" width="170" height="120">
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#'>
+                                  <!-- TAKEALOT -->
+                                    <img src="images/tl.png" alt="pic" width="170" height="120">
+                                </a>
+                            </li>
+                            <li>
+                                  <a href='#'>
+                                    <!-- MAZAR -->
+                                      <img src="images/mazar.png" alt="pic" width="170" height="120">
+                                  </a>
+                              </li>
+                            <li>
+                                  <a href='#'>
+                                    <!-- TNS -->
+                                      <img src="images/TN.png" alt="pic" width="170" height="120">
+                                  </a>
+                              </li>
+                            <li>
+                                  <a href='#'>
+                                    <!-- LWANDLE -->
+                                      <img src="images/lw.png" alt="pic" width="170" height="120">
+                                  </a>
+                              </li>
+                              <li>
+                                    <a href='#'>
+                                      <!-- CSG -->
+                                        <img src="images/csg.png" alt="pic" width="160" height="120">
+                                    </a>
+                                </li>
+                                <li>
+                                      <a href='#'>
+                                        <!-- OPENBOX -->
+                                          <img src="images/open.png" alt="pic" width="170" height="120">
+                                      </a>
+                                  </li>
+                                  <li>
+                                        <a href='#'>
+                                          <!-- AUTOMATTIC -->
+                                            <img src="images/auto.png" alt="pic" width="170" height="120">
+                                        </a>
+                                    </li>
+                                    <li>
+                                          <a href='#'>
+                                            <!-- DGMT -->
+                                              <img src="images/dg.png" alt="pic" width="190" height="120">
+                                          </a>
+                                      </li>
+                                      <li>
+                                            <a href='#'>
+                                              <!-- AMAZON -->
+                                                <img src="images/am.png" alt="pic" width="200" height="100">
+                                            </a>
+                                        </li>
+                                        <li>
+                                              <a href='#'>
+                                                <!-- OPENBOX -->
+                                                  <img src="images/open.png" alt="pic" width="170" height="120">
+                                              </a>
+                                          </li>
+                                          <li>
+                                                <a href='#'>
+                                                  <!-- WETECH -->
+                                                    <img src="images/wetech.png" alt="pic" width="170" height="130">
+                                                </a>
+                                            </li>
+                        </ul>
+                    </div>
+                </div>
+          <!-- end of carousal structure -->
+
+
+          <footer>
+
+            <!-- flex container structure -->
+            <div class="flex-container">
+              <div>
+
+                <!-- legal information -->
+                <h2>Legal</h2>
+                <p class="paratext">Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+
+                <!-- end of legal info -->
+              </div>
+              <div>
+
+                <!-- different sorts of links part 1 -->
+                <h2>Help & Support</h2>
+                <p><a href="#">Help centre</a></p>
+                <p><a href="#">Free simple template</a></p>
+                <p><a href="#">Refund policy</a></p>
+                <p><a href="#">Report spam</a></p>
+              </div>
+
+              <div>
+
+                <!-- different sorts of links part 2 -->
+                <h2 id="heads">Company</h2>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Testamonials</a></p>
+                <p><a href="#">Affiliate programme</a></p>
+              </div>
+              <div>
+
+                <p class="paratext">We rely on the generous contributions of like-minded people like yourself to provide girls with an engaging learning experience and valuable opportunities.</p>
+                <p><img class="icon" src="images/phn.ico" alt="phn" width="15" height="15"><p id="p4">021 685 0991</p>
+                <p><img class="icon" src="images/letter.jpg" alt="phn" width="15" height="15"><p id="p3">info@code4ct.com</p>
+                <img class="icon" src="images/location.png" alt="phn" width="15" height="15"><p id="p2">403 Old Castle Brewery</p>
+
+              </div>
+            </div>
+
+            <!-- end of flex container structure -->
+
+            <!-- flex box structure -->
+            <div class="flex-box">
+
+              <div><p id="die">copyright © 2017 PRIVACY POLICY</p></div>
+              <div id="f">Follow us:</div>
+              <div id="pics">
+                <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/fb.png" alt="pic" width="23" height="20"></a>
+                <a href="https://twitter.com/@code4ct"><img class="pictures" src="images/tw.png" alt="pic" width="23" height="20"></a>
+                <a href="https://www.instagram.com/code4ct/"><img class="pictures" src="images/pinterest.png" alt="pic" width="23" height="20"></a>
+                <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/g+.png" alt="pic" width="23" height="20"></a>
+                <a href="https://www.linkedin.com/company/9414552/"><img class="pictures"src="images/Linkedin.png" alt="pic" width="23" height="20"></a>
+                <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/Skype-logo.png" alt="pic" width="23" height="20"></a>
+              </div>
+
+            </div>
+            <!-- end of flex box structure -->
+
+        </footer>
+
+      </article>
+
+      <script type="text/javascript">
+// start of count up
+      $('.counter').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },
+
+    {
+
+      duration: 8000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+      }
+
+    });
+
+  });
+  // end of count up
+      </script>
+
+      <script type="text/javascript">
+      $(document).ready(function() {
+
+             //options( 1 - ON , 0 - OFF)
+             var auto_slide = 1;
+             var hover_pause = 1;
+             var key_slide = 1;
+
+             //speed of auto slide(
+             var auto_slide_seconds = 0;
+             /* IMPORTANT: i know the variable is called ...seconds but it's
+             in milliseconds ( multiplied with 1000) '*/
+
+             /*move the last list item before the first item. The purpose of this is
+             if the user clicks to slide left he will be able to see the last item.*/
+             $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+
+             //check if auto sliding is enabled
+             if(auto_slide == 1){
+                 /*set the interval (loop) to call function slide with option 'right'
+                 and set the interval time to the variable we declared previously */
+                 var timer = setInterval('slide("right")', auto_slide_seconds);
+
+                 /*and change the value of our hidden field that hold info about
+                 the interval, setting it to the number of milliseconds we declared previously*/
+                 $('#hidden_auto_slide_seconds').val(auto_slide_seconds);
+             }
+
+             //check if hover pause is enabled
+             if(hover_pause == 1){
+                 //when hovered over the list
+                 $('#carousel_ul').hover(function(){
+                     //stop the interval
+                     clearInterval(timer)
+                 },function(){
+                     //and when mouseout start it again
+                     timer = setInterval('slide("right")', auto_slide_seconds);
+                 });
+
+             }
+
+             //check if key sliding is enabled
+             if(key_slide == 1){
+
+                 //binding keypress function
+                 $(document).bind('keypress', function(e) {
+                     //keyCode for left arrow is 37 and for right it's 39 '
+                     if(e.keyCode==37){
+                             //initialize the slide to left function
+                             slide('left');
+                     }else if(e.keyCode==39){
+                             //initialize the slide to right function
+                             slide('right');
+                     }
+                 });
+
+             }
+
+       });
+
+      //FUNCTIONS BELLOW
+
+      //slide function
+      function slide(where){
+
+                 //get the item width
+                 var item_width = $('#carousel_ul li').outerWidth() + 10;
+
+                 /* using a if statement and the where variable check
+                 we will check where the user wants to slide (left or right)*/
+                 if(where == 'left'){
+                     //...calculating the new left indent of the unordered list (ul) for left sliding
+                     var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;
+                 }else{
+                     //...calculating the new left indent of the unordered list (ul) for right sliding
+                     var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;
+
+                 }
+
+                 //make the sliding effect using jQuery's animate function... '
+                 $('#carousel_ul:not(:animated)').animate({'left' : left_indent},3000,function(){
+
+                     /* when the animation finishes use the if statement again, and make an ilussion
+                     of infinity by changing place of last or first item*/0.
+                     if(where == 'left'){
+                         //...and if it slided to left we put the last item before the first item
+                         $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+                     }else{
+                         //...and if it slided to right we put the first item after the last item
+                         $('#carousel_ul li:last').after($('#carousel_ul li:first'));
+                     }
+
+                     //...and then just get back the default left indent
+                     $('#carousel_ul').css({'left' : '-210px'});
+                 });
+
+      }
+
+//circular progress bar
+var progressBarOptions = {
+
+
+	startAngle: -1.55,
+	size: 200,
+    value: 0.75,
+    fill: {
+		color: '#ffa500'
+	}
+}
+
+
+
+$('#circle-b').circleProgress({
+	value : 0.25,
+	fill: {
+		color: '#FF0000'
+	}
+});
+
+$('#circle-c').circleProgress({
+	value : 0.92,
+	fill: {
+		color: '#008000'
+	}
+});
+      </script>
+
+  </body>
+</html>

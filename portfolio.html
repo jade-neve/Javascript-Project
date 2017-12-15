@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>PORTFOLIO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <style>
+
+    /*page header styling*/
+
+    /*objects styling (search icon/image logo/Code4ct)*/
+    #img_logo {
+      float: left;
+      margin-left: -490px;
+    }
+
+    #img_icon {
+      margin-top: -20px;
+    }
+
+    #Search {
+      margin-left: 145mm;
+      margin-top: 5mm;
+    }
+    /*end of objects styling (search icon/image logo/Code4ct)*/
+
+      input[type=text] {
+        width: 200px;
+        height: 30px;
+        margin-top: -10px;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        background-color: white;
+        padding-top:-10px;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+    }
+    /*input styling*/
+    input[type=text]:focus {
+        width: 100%;
+    }
+    /*button styling*/
+    button {
+      width: 35px;
+      background-color:white;
+      color: white;
+      padding: -3px -1px;
+      margin: 0px;
+      border: 1px solid #ccc;
+      font-family: 'Lato', sans-serif;
+      margin-top: -10mm;
+      height: 35px;
+      margin-left: 2px;
+    }
+
+    #pageHeader {
+      grid-area: header;
+      height: 350px;
+      background-color: #444;
+      background-color: #e5e3e3;
+      color: #444;
+    }
+
+    #heading {
+      margin-top: 40mm;
+    }
+
+    #PageHeader1 {
+      text-align: center;
+      margin-top: 30mm;
+    }
+    /*end of page header styling*/
+
+    /*navbar*/
+
+    /*unlist order styling*/
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: white;
+      padding-left: 505px;
+      height: 57px;
+      font-family: 'Lato', sans-serif;
+      position: fixed;
+      width: 100%;
+    }
+
+    /*start of list styling*/
+    li {
+      float: left;
+      margin-top: -10mm;
+    }
+
+    li a {
+      display: block;
+      color: #444;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    li a:hover {
+      color: indianred;
+    }
+    /*end of list styling*/
+
+    /*end of navbar*/
+
+    /*body layout styling*/
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "article article article"
+        "article article article"
+        "footer footer footer";
+      grid-template-rows: 60px 1fr 60px;
+      grid-template-columns: 20% 1fr 15%;
+      grid-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+    /*end of layout styling*/
+
+    /*mainArticle styling*/
+    #mainArticle {
+      grid-area: article;
+      height: 300px;
+      margin-top: 100mm;
+      color: #444;
+      }
+      /*end of mainArticle*/
+
+    /*span styling*/
+      span.heading3 {
+        border-bottom: 2px solid #ed524d;
+      }
+
+      h3 {
+        border-bottom: 2px solid white;
+        text-align: center;
+        color: #444;
+      }
+      /*end of span styling*/
+      /*sub article styling */
+      #sub_article {
+        text-align: center;
+        width: 1300px;
+        margin-left: 5mm;
+      }
+      /*end of sub styling*/
+
+      /*picture styling */
+
+      /*picture 1*/
+      #pic1 {
+        float: left;
+        width: 340px;
+        height: 270px;
+        background-color: grey;
+      }
+
+      /*picture 2*/
+      #pic2 {
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: lightgrey;
+      }
+
+      /*picture 3*/
+      #pic3 {
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: #444;
+      }
+
+      /*picture 4*/
+      #pic4 {
+        float: left;
+        width: 330px;
+        height: 270px;
+        background-color: darkgrey;
+      }
+
+      /*picture 5*/
+      #pic5{
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: #333;
+      }
+
+      /*picture 6*/
+      #pic6 {
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: grey;
+      }
+
+      /*picture 7*/
+      #pic7 {
+        float: left;
+        width: 340px;
+        height: 270px;
+        background-color: lightgrey;
+      }
+
+      /*picture 8*/
+      #pic8 {
+        float: left;
+        width: 330px;
+        height: 270px;
+        background-color: indianred;
+      }
+
+      /*picture 9*/
+      #pic9 {
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: #444;
+      }
+
+      /*picture 10*/
+      #pic10 {
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: lightgrey;
+      }
+
+      /*picture 11*/
+      #pic11 {
+        float: left;
+        width: 419px;
+        height: 270px;
+        background-color: darkgrey;
+      }
+
+      /*picture 12*/
+      #pic12 {
+        float: left;
+        width: 330px;
+        height: 270px;
+        background-color: grey;
+      }
+
+      * {
+      box-sizing: border-box;
+    }
+
+    .row > .column {
+      padding: 0 8px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 390px;
+      height: 270px;
+      max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    /*start of carousal for logos*/
+    img {
+      margin-bottom: -4px;
+    }
+    /*caption container styling*/
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+    /*demo styling*/
+    .demo {
+      opacity: 0.6;
+    }
+    /*a. active styling*/
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    /*hover*/
+    img.hover-shadow {
+      transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    /*carousal inner styling*/
+    #carousel_inner {
+        width: 100%;
+        overflow-x: hidden;
+        background: #F0F0F0;
+        height: 100px;
+    }
+
+    /*carousal ul styling*/
+    #carousel_ul li img {
+        width: 200px;
+        height: 110px;
+        margin-top: -1mm;
+    }
+    /*carousal ul styling*/
+    #carousel_ul {
+        position: relative;
+        left: -210px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        width: 9999px;
+
+    }
+    /*carousal ul li styling*/
+    #carousel_ul li {
+        float: left;
+        width: 200px;
+        padding: 0px;
+        height: 610px;
+        background: #000000;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /*ul img styling*/
+    #carousel_ul li img {
+        cursor: pointer;
+        cursor: hand;
+        border: 0px;
+    }
+    /*end of ul styling*/
+    #left_scroll, #right_scroll {
+        float: left;
+        height: 630px;
+        width: 35px;
+        margin-left: 20px;
+    }
+
+    #left_scroll img, #right_scroll img {
+        border: 0;
+     /* remove the default border of linked image */
+    /*styling*/
+        cursor: pointer;
+        cursor: hand;
+    }
+    /*scroll img styling*/
+    #left_scroll img {
+        width: 25px;
+        height: 625px;
+    }
+
+    #right_scroll img {
+        width: 25px;
+        height: 625px;
+    }
+    /*end of carousal*/
+      /*end of picture styling */
+
+    /*portfolio styling */
+      #Portfolio {
+        background-color: none;
+        height: 810px;
+        margin-bottom: 10mm;
+      }
+      /*end of portflio styling */
+
+    .LOGO_icons {
+      margin-top: 100px;
+      height: 270px;
+      background-color: black;
+    }
+
+    .image_logo {
+      margin-left: 40mm;
+    }
+
+
+    /*footer section*/
+
+    /*flex container*/
+    .flex-container {
+    display: flex;
+    background-color: none;
+    margin-top: 0mm;
+    }
+
+    .flex-container>div {
+    background-color: none;
+    width: 350px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    }
+
+    /*end of flex container*/
+
+    /*lists*/
+    h2{
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    }
+    /*span styling*/
+    span.heading {
+    border-bottom: 2px solid #ed524d;
+    }
+
+    /*paragraph styling*/
+    .paratext {
+    color: black;
+    }
+
+    /*anchor tag styling*/
+    a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11px;
+    }
+
+    a:hover {
+    color: #ed524d;
+    }
+    /*end of anchor styling*/
+
+    .icon {
+    float: left;
+    margin-left: 25mm;
+    }
+
+    /*end of lists*/
+
+    /*paragraph section*/
+    #p2 {
+    width: 200px;
+    margin-left: 10mm;
+    }
+
+    #p3 {
+    margin-right: 26mm;
+    }
+
+    #p4 {
+    margin-right: 30mm;
+    }
+    /*end of paragraph section*/
+
+    /*flex box*/
+    .flex-box {
+    display: flex;
+    background-color: #ed524d;
+    margin-top: 0mm;
+    }
+
+    .flex-box>div {
+    background-color: none;
+    width: 700px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin-top: 12px;
+    }
+    /*end of flex box*/
+
+    /*extras*/
+    #die {
+    margin-left: -10mm;
+    margin-top: 12px;
+    }
+
+    .pictures {
+    margin-top: 13px;
+    margin-left: -100px;
+    }
+
+    #f {
+    margin-left: 165mm;
+    margin-top: 25px;
+    }
+
+    h4 {
+    font-size: 15px;
+    }
+
+    h5 {
+    font-size: 13px;
+    }
+
+    /*end of extras*/
+    /*end of stylesheet*/
+
+
+    </style>
+
+  </head>
+  <body>
+
+
+      <header id="pageHeader">
+
+
+
+        <ul>
+          <!-- Code4CT logo -->
+          <div id="img_logo">
+            <img src="images/cdt.png" alt="pic" width="160" height="57">
+          </div>
+
+          <div id="Search">
+            <!-- Search section -->
+          <input type="text" name="search" placeholder="Search.."><button><img id="img_icon" src="images/searchicon.png" alt="pic" width="15" height="15"></button>
+        </div>
+
+        <!-- Navbar for different sites -->
+        <li><a class="active" href="home.html">HOME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="course(1).html">COURSE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <!-- end of navbar -->
+        </ul>
+
+        <div id="PageHeader1">
+          <h1 id="heading">OUR PORTFOLIO</h1>
+        </div>
+
+      </header>
+
+      <article id="mainArticle">
+
+        <div id="sub_article">
+
+          <h3>Our Awes<span class="heading3">ome</span> Portfolio</h3>
+          <p>We equip high potential female learners with the coding, problem solving and life skills that will allow them to leverage technology to contribute meaningfully to South Africa’s innovation system. The program exposes young women to how technology can be used for social innovation and helps them navigate critical study decisions.</p>
+
+        </div>
+        <!-- Portfolio Section -->
+        <div id="Portfolio">
+
+          <div class="row">
+            <!-- Column structure 1 -->
+            <div class="column">
+              <img id="pic1" src="images/coding.jpg" width="419" height="270" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 2 -->
+            <div class="column">
+              <img id="pic2" src="images/img.jpg" width="419" height="270" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 3 -->
+            <div class="column">
+              <img id="pic3" src="images/home.jpg" width="419" height="270" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 4 -->
+            <div class="column">
+              <img id="pic4" src="images/help.jpg" width="419" height="270" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 5 -->
+            <div class="column">
+              <img id="pic5" src="images/laptop.jpg" width="419" height="270" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 6 -->
+            <div class="column">
+              <img id="pic6" src="images/class.jpg" width="419" height="270" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 7 -->
+            <div class="column">
+              <img id="pic7" src="images/study.jpg" width="419" height="270" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 8 -->
+            <div class="column">
+              <img id="pic8" src="images/bnw.jpg" width="419" height="270" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 9 -->
+            <div class="column">
+              <img id="pic9" src="images/lap.jpg" width="419" height="270" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 10 -->
+            <div class="column">
+              <img id="pic10" src="images/b2.jpg" width="419" height="270" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 11 -->
+            <div class="column">
+              <img id="pic11" src="images/p.jpg" width="419" height="270" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            </div>
+            <!-- Column structure 12 -->
+            <div class="column">
+              <img id="pic12" src="images/stud2.jpg" width="419" height="270" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            </div>
+          </div>
+
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <!-- Slide 1 -->
+              <div class="mySlides">
+                <div class="numbertext">1 / 12</div>
+                <img src="images/coding.jpg">
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="mySlides">
+                <div class="numbertext">2 / 12</div>
+                <img src="images/img.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="mySlides">
+                <div class="numbertext">3 / 12</div>
+                <img src="images/home.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="mySlides">
+                <div class="numbertext">4 / 12</div>
+                <img src="images/help.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="mySlides">
+                <div class="numbertext">5 / 12</div>
+                <img src="images/laptop.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="mySlides">
+                <div class="numbertext">6 / 12</div>
+                <img src="images/class.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 7 -->
+              <div class="mySlides">
+                <div class="numbertext">7 / 12</div>
+                <img src="images/study.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 8 -->
+              <div class="mySlides">
+                <div class="numbertext">8 / 12</div>
+                <img src="images/bnw.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 9 -->
+              <div class="mySlides">
+                <div class="numbertext">9 / 12</div>
+                <img src="images/lap.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 10 -->
+              <div class="mySlides">
+                <div class="numbertext">10 / 12</div>
+                <img src="images/b2.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 11 -->
+              <div class="mySlides">
+                <div class="numbertext">11 / 12</div>
+                <img src="images/p.jpg" style="width:100%">
+              </div>
+
+              <!-- Slide 12 -->
+              <div class="mySlides">
+                <div class="numbertext">12 / 12</div>
+                <img src="images/stud2.jpg" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+      </div>
+      </div>
+
+
+      <!-- carousal structure -->
+            <div id='carousel_container'>
+                <div id='carousel_inner'>
+                    <ul id='carousel_ul'>
+                        <li>
+                            <a href='#'>
+                              <!-- MOBENZI -->
+                                <img src="images/mobi.png" alt="pic" width="170" height="120">
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                              <!-- TAKEALOT -->
+                                <img src="images/tl.png" alt="pic" width="170" height="120">
+                            </a>
+                        </li>
+                        <li>
+                              <a href='#'>
+                                <!-- MAZAR -->
+                                  <img src="images/mazar.png" alt="pic" width="170" height="120">
+                              </a>
+                          </li>
+                        <li>
+                              <a href='#'>
+                                <!-- TNS -->
+                                  <img src="images/TN.png" alt="pic" width="170" height="120">
+                              </a>
+                          </li>
+                        <li>
+                              <a href='#'>
+                                <!-- LWANDLE -->
+                                  <img src="images/lw.png" alt="pic" width="170" height="120">
+                              </a>
+                          </li>
+                          <li>
+                                <a href='#'>
+                                  <!-- CSG -->
+                                    <img src="images/csg.png" alt="pic" width="160" height="120">
+                                </a>
+                            </li>
+                            <li>
+                                  <a href='#'>
+                                    <!-- OPENBOX -->
+                                      <img src="images/open.png" alt="pic" width="170" height="120">
+                                  </a>
+                              </li>
+                              <li>
+                                    <a href='#'>
+                                      <!-- AUTOMATTIC -->
+                                        <img src="images/auto.png" alt="pic" width="170" height="120">
+                                    </a>
+                                </li>
+                                <li>
+                                      <a href='#'>
+                                        <!-- DGMT -->
+                                          <img src="images/dg.png" alt="pic" width="190" height="120">
+                                      </a>
+                                  </li>
+                                  <li>
+                                        <a href='#'>
+                                          <!-- AMAZON -->
+                                            <img src="images/am.png" alt="pic" width="200" height="100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                          <a href='#'>
+                                            <!-- OPENBOX -->
+                                              <img src="images/open.png" alt="pic" width="170" height="120">
+                                          </a>
+                                      </li>
+                                      <li>
+                                            <a href='#'>
+                                              <!-- WETECH -->
+                                                <img src="images/wetech.png" alt="pic" width="170" height="130">
+                                            </a>
+                                        </li>
+                    </ul>
+                </div>
+            </div>
+      <!-- end of carousal structure -->
+
+      <footer>
+
+        <!-- flex container structure -->
+        <div class="flex-container">
+          <div>
+
+            <!-- legal information -->
+            <h2>Legal</h2>
+            <p class="paratext">Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+
+            <!-- end of legal info -->
+          </div>
+          <div>
+
+            <!-- different sorts of links part 1 -->
+            <h2>Help & Support</h2>
+            <p><a href="#">Help centre</a></p>
+            <p><a href="#">Free simple template</a></p>
+            <p><a href="#">Refund policy</a></p>
+            <p><a href="#">Report spam</a></p>
+          </div>
+
+          <div>
+
+            <!-- different sorts of links part 2 -->
+            <h2 id="heads">Company</h2>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">Blog</a></p>
+            <p><a href="#">Testamonials</a></p>
+            <p><a href="#">Affiliate programme</a></p>
+          </div>
+          <div>
+
+            <p class="paratext">We rely on the generous contributions of like-minded people like yourself to provide girls with an engaging learning experience and valuable opportunities.</p>
+            <p><img class="icon" src="images/phn.ico" alt="phn" width="15" height="15"><p id="p4">021 685 0991</p>
+            <p><img class="icon" src="images/letter.jpg" alt="phn" width="15" height="15"><p id="p3">info@code4ct.com</p>
+            <img class="icon" src="images/location.png" alt="phn" width="15" height="15"><p id="p2">403 Old Castle Brewery</p>
+
+          </div>
+        </div>
+
+        <!-- end of flex container structure -->
+
+        <!-- flex box structure -->
+        <div class="flex-box">
+
+          <div><p id="die">copyright © 2017 PRIVACY POLICY</p></div>
+          <div id="f">Follow us:</div>
+          <div id="pics">
+            <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/fb.png" alt="pic" width="23" height="20"></a>
+            <a href="https://twitter.com/@code4ct"><img class="pictures" src="images/tw.png" alt="pic" width="23" height="20"></a>
+            <a href="https://www.instagram.com/code4ct/"><img class="pictures" src="images/pinterest.png" alt="pic" width="23" height="20"></a>
+            <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/g+.png" alt="pic" width="23" height="20"></a>
+            <a href="https://www.linkedin.com/company/9414552/"><img class="pictures"src="images/Linkedin.png" alt="pic" width="23" height="20"></a>
+            <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/Skype-logo.png" alt="pic" width="23" height="20"></a>
+          </div>
+
+        </div>
+        <!-- end of flex box structure -->
+
+        </footer>
+
+      </article>
+
+<script type="text/javascript">
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+       //options( 1 - ON , 0 - OFF)
+       var auto_slide = 1;
+       var hover_pause = 1;
+       var key_slide = 1;
+
+       //speed of auto slide(
+       var auto_slide_seconds = 0;
+       /* IMPORTANT: i know the variable is called ...seconds but it's
+       in milliseconds ( multiplied with 1000) '*/
+
+       /*move the last list item before the first item. The purpose of this is
+       if the user clicks to slide left he will be able to see the last item.*/
+       $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+
+       //check if auto sliding is enabled
+       if(auto_slide == 1){
+           /*set the interval (loop) to call function slide with option 'right'
+           and set the interval time to the variable we declared previously */
+           var timer = setInterval('slide("right")', auto_slide_seconds);
+
+           /*and change the value of our hidden field that hold info about
+           the interval, setting it to the number of milliseconds we declared previously*/
+           $('#hidden_auto_slide_seconds').val(auto_slide_seconds);
+       }
+
+       //check if hover pause is enabled
+       if(hover_pause == 1){
+           //when hovered over the list
+           $('#carousel_ul').hover(function(){
+               //stop the interval
+               clearInterval(timer)
+           },function(){
+               //and when mouseout start it again
+               timer = setInterval('slide("right")', auto_slide_seconds);
+           });
+
+       }
+
+       //check if key sliding is enabled
+       if(key_slide == 1){
+
+           //binding keypress function
+           $(document).bind('keypress', function(e) {
+               //keyCode for left arrow is 37 and for right it's 39 '
+               if(e.keyCode==37){
+                       //initialize the slide to left function
+                       slide('left');
+               }else if(e.keyCode==39){
+                       //initialize the slide to right function
+                       slide('right');
+               }
+           });
+
+       }
+
+ });
+
+//FUNCTIONS BELLOW
+
+//slide function
+function slide(where){
+
+           //get the item width
+           var item_width = $('#carousel_ul li').outerWidth() + 10;
+
+           /* using a if statement and the where variable check
+           we will check where the user wants to slide (left or right)*/
+           if(where == 'left'){
+               //...calculating the new left indent of the unordered list (ul) for left sliding
+               var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;
+           }else{
+               //...calculating the new left indent of the unordered list (ul) for right sliding
+               var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;
+
+           }
+
+           //make the sliding effect using jQuery's animate function... '
+           $('#carousel_ul:not(:animated)').animate({'left' : left_indent},3000,function(){
+
+               /* when the animation finishes use the if statement again, and make an ilussion
+               of infinity by changing place of last or first item*/
+               if(where == 'left'){
+                   //...and if it slided to left we put the last item before the first item
+                   $('#carousel_ul li:first').before($('#carousel_ul li:last'));
+               }else{
+                   //...and if it slided to right we put the first item after the last item
+                   $('#carousel_ul li:last').after($('#carousel_ul li:first'));
+               }
+
+               //...and then just get back the default left indent
+               $('#carousel_ul').css({'left' : '-210px'});
+           });
+
+}
+      </script>
+  </body>
+</html>

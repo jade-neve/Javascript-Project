@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      padding-left: 120mm;
+      background-color: white;
+      height: 57px;
+      font-family: 'Lato', sans-serif;
+      position: fixed;
+      width: 100%;
+    }
+
+    li {
+      float: left;
+      margin-left: 5mm;
+    }
+
+    li a {
+      display: block;
+      color: #444;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    li a:hover {
+      color: #ed524d;
+    }
+
+
+    #pageHeader {
+      grid-area: header;
+      height: 350px;
+      background-color: #d1d1d1;
+      color: #444;
+    }
+
+    #PageHeader1 {
+      text-align: center;
+      margin-top: 30mm;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "article article article"
+        "article article article"
+        "footer footer footer";
+      grid-template-rows: 60px 1fr 60px;
+      grid-template-columns: 20% 1fr 15%;
+      grid-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #d1d1d1;
+    }
+
+    #course1{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 74mm;
+      color: #444;
+    }
+
+    #course2{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      margin-left: 3mm;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 74mm;
+      color: #444;
+    }
+
+    @media (max-width:1000px){
+      #course1 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 74mm;
+        color: #444;
+      }
+
+      #course2 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        margin-left: 3mm;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 74mm;
+        color: #444;
+      }
+    }
+
+    #course3{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      margin-left: -184mm;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 74mm;
+      color: #444;
+    }
+
+    #course4{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      box-shadow: 10px 10px 10px grey;
+      margin-top: 30mm;
+      border-radius: 8px;
+      padding-left: 3mm;
+      color: #444;
+    }
+
+    @media (max-width:1000px){
+      #course3 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        margin-left: -184mm;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 74mm;
+        color: #444;
+      }
+
+      #course4 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        box-shadow: 10px 10px 10px grey;
+        margin-top: 30mm;
+        border-radius: 8px;
+        padding-left: 3mm;
+        color: #444;
+      }
+    }
+
+    #course5{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      margin-left: 3mm;
+      box-shadow: 10px 10px 10px grey;
+      margin-top: 30mm;
+      border-radius: 8px;
+      padding-left: 3mm;
+      color: #444;
+    }
+
+    #course6{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      margin-left: -184mm;
+      box-shadow: 10px 10px 10px grey;
+      margin-top: 30mm;
+      border-radius: 8px;
+      padding-left: 3mm;
+      color: #444;
+    }
+
+    @media (max-width:1000px){
+      #course5 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        margin-left: 3mm;
+        box-shadow: 10px 10px 10px grey;
+        margin-top: 30mm;
+        border-radius: 8px;
+        padding-left: 3mm;
+        color: #444;
+      }
+
+      #course6 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        margin-left: -184mm;
+        box-shadow: 10px 10px 10px grey;
+        margin-top: 30mm;
+        border-radius: 8px;
+        padding-left: 3mm;
+        color: #444;
+      }
+    }
+
+    #course7{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 114mm;
+      color: #444;
+    }
+
+    #course8{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      margin-left: 3mm;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 114mm;
+      color: #444;
+    }
+
+    @media (max-width:1000px){
+      #course7 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 114mm;
+      }
+
+      #course8 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        margin-left: 3mm;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 114mm;
+      }
+    }
+
+    #course9{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      margin-left: -184mm;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 114mm;
+      color: #444;
+    }
+
+    #course10{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 23mm;
+      color: #444;
+    }
+
+    @media (max-width:1000px){
+      #course9 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        margin-left: -184mm;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 114mm;
+        color: #444;
+      }
+      #course10 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 23mm;
+        color: #444;
+      }
+    }
+
+    #course11{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      margin-left: 3mm;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 23mm;
+      color: #444;
+    }
+
+    #course12{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      float: left;
+      margin-left: -184mm;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      margin-top: 23mm;
+      color: #444;
+    }
+
+    @media (max-width:1000px){
+      #course11 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        margin-left: 3mm;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 23mm;
+        color: #444;
+      }
+
+      #course12 {
+        height: 360px;
+        width: 250px;
+        background-color: white;
+        float: left;
+        margin-left: -184mm;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        padding-left: 3mm;
+        margin-top: 23mm;
+        color: #444;
+      }
+    }
+
+    h2{
+      text-align: center;
+    }
+
+    .demo_head{
+      color: #444;
+      font-size: 25px;
+    }
+    .course_cart{
+      height: 360px;
+      width: 250px;
+      background-color: white;
+      box-shadow: 10px 10px 10px grey;
+      border-radius: 8px;
+      padding-left: 3mm;
+      color: #444;
+      margin-top: -449mm;
+      margin-left: 250mm;
+    }
+
+    #course_head{
+      color: #444;
+      font-size: 15px;
+    }
+
+    /*footer section*/
+
+    /*flex container*/
+  .flex-container {
+    display: flex;
+    background-color: none;
+    margin-top: 0mm;
+    margin-left: -75mm;
+  }
+
+  .flex-container>div {
+    background-color: none;
+    width: 350px;
+    height: 190px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /*end of flex container*/
+
+  /*lists*/
+  h2{
+    font-size: 25px;
+    border-bottom: 2px solid white;
+  }
+  /*span styling*/
+  span.heading {
+    border-bottom: 2px solid #ed524d;
+  }
+
+  /*paragraph styling*/
+  .paratext {
+    color: black;
+  }
+
+  /*anchor tag styling*/
+  a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+  a:hover {
+    color: #ed524d;
+  }
+  /*end of anchor styling*/
+
+  /*end of lists*/
+
+  /*flex box*/
+  .flex-box {
+    display: flex;
+    background-color: #ed524d;
+    margin-top: 0mm;
+    margin-left: -75mm;
+
+  }
+
+  .flex-box>div {
+    background-color: none;
+    width: 700px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    margin-top: 12px;
+  }
+  /*end of flex box*/
+
+  /*extras*/
+  #die {
+    margin-left: -125mm;
+    margin-top: 12px;
+  }
+
+  .pictures {
+    margin-top: 13px;
+  }
+
+  #pics {
+    margin-left: -120mm;
+  }
+
+  #f {
+    margin-left: -100mm;
+    margin-top: 25px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 13px;
+  }
+
+  /*end of extras*/
+  /*end of stylesheet*/
+
+    </style>
+  </head>
+  <body>
+
+      <header id="pageHeader">
+
+        <ul>
+          <li><a class="active" href="home.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <!-- end of navbar -->
+        </ul>
+
+        <div id="PageHeader1">
+          <h1 id="heading">COURSE PAGE</h1>
+        </div>
+
+    </header>
+
+    <div id="course1">
+    </div>
+
+    <div id="course2">
+    </div>
+
+    <div id="course3">
+    </div>
+
+    <div id="course4">
+    </div>
+
+    <div id="course5">
+    </div>
+
+    <div id="course6">
+    </div>
+
+    <div id="course7">
+    </div>
+
+    <div id="course8">
+    </div>
+
+    <div id="course9">
+    </div>
+
+    <div id="course10">
+    </div>
+
+    <div id="course11">
+    </div>
+
+    <div id="course12">
+    </div>
+
+    <div class="course_cart">
+      <p id="cart_total"></p>
+    </div>
+
+    <footer>
+
+      <!-- flex container structure -->
+      <div class="flex-container">
+        <div>
+
+          <!-- legal information -->
+          <h2>Legal</h2>
+          <p class="paratext">Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)</p>
+
+          <!-- end of legal info -->
+        </div>
+        <div>
+
+          <!-- different sorts of links part 1 -->
+          <h2>Help & Support</h2>
+          <p><a href="#">Help centre</a></p>
+          <p><a href="#">Free simple template</a></p>
+          <p><a href="#">Refund policy</a></p>
+          <p><a href="#">Report spam</a></p>
+        </div>
+
+        <div>
+
+          <!-- different sorts of links part 2 -->
+          <h2 id="heads">Company</h2>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Contact Us</a></p>
+          <p><a href="#">Blog</a></p>
+          <p><a href="#">Testamonials</a></p>
+          <p><a href="#">Affiliate programme</a></p>
+        </div>
+      </div>
+
+      <!-- end of flex container structure -->
+
+      <!-- flex box structure -->
+      <div class="flex-box">
+
+        <div><p id="die">copyright © 2017 PRIVACY POLICY</p></div>
+        <div id="f">Follow us:</div>
+        <div id="pics">
+          <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/fb.png" alt="pic" width="23" height="20"></a>
+          <a href="https://twitter.com/@code4ct"><img class="pictures" src="images/tw.png" alt="pic" width="23" height="20"></a>
+          <a href="https://www.instagram.com/code4ct/"><img class="pictures" src="images/pinterest.png" alt="pic" width="23" height="20"></a>
+          <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/g+.png" alt="pic" width="23" height="20"></a>
+          <a href="https://www.linkedin.com/company/9414552/"><img class="pictures"src="images/Linkedin.png" alt="pic" width="23" height="20"></a>
+          <a href="https://www.facebook.com/code4ct/"><img class="pictures" src="images/Skype-logo.png" alt="pic" width="23" height="20"></a>
+        </div>
+
+      </div>
+      <!-- end of flex box structure -->
+
+  </footer>
+
+    <script type="text/javascript">
+
+    function course (title, description, duration, cost) {
+      this.title = title;
+      this.description = description;
+      this.duration = duration;
+      this.cost = cost;
+    }
+
+    var courseOne = new course("Intro to Coding: Web Pages", "Code a simple one-page website using HTML and jQuery.", "3 Hours", "250");
+    var courseTwo = new course("Intro to Coding: Music", "Code a song using SonicPi software on a Raspberry Pi computer.", "3 Hours", "250");
+    var courseThree = new course("Intro to Coding: Animation", "Create a 2D animation using coding language JavaScript.", "3 Hours", "250");
+    var courseFour = new course("Create with Code: Web Pages", "Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.", "3 Days", "960");
+    var courseFive = new course("Getting started as a developer", "Learn how to set up a development environment and practical skills to start coding.", "3 Hours", "250");
+    var courseSix = new course("Beginner JavaScript", "Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.", "6 Days", "1800");
+    var courseSeven = new course("Beginner Front End Web Development", "Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.", "6 Days", "1800");
+    var courseEight = new course("Beginner Python", "Develop a basic proficiency in programming principles and methods in Python.", "6 Days", "1800");
+    var courseNine = new course("Full Stack JavaScript", "Develop an understanding of the front and backend development environment and basic proficiency in server side JavaScript and object-oriented programming. By the end of the course you will be able to architect an application, control flow in an application and persist and retrieve data in a database.", "6 Days", "1800");
+    var courseTen = new course("Website Deployment", "Learn how to manage and deploy code to a server environment so that you can host your own web pages.", "4 Days", "1200");
+    var courseEleven = new course("Industry Immersion", "Spend a week at a tech company and gain experience in industry.", "5 Days", "1500");
+    var courseTwelve = new course("Digital Communication Skills", "Learn how to communicate and collaborate in a 21st century work environment using digital workplace tools. ", "1 Day", "300");
+
+    document.getElementById("course1").innerHTML = "<h2 class='demo_head'>" + courseOne.title + "</h2>" + "<p>" + courseOne.description + "</p>" + "<p>" + courseOne.duration + "</p>" + "<p>" + courseOne.cost + "</p>" + "<button id='button_add1' value='250'> + </button>" + "<button id='button_sub1' value='250'> - </button>";
+    document.getElementById("course2").innerHTML = "<h2 class='demo_head'>" + courseTwo.title + "</h2>" + "<p>" + courseTwo.description + "</p>" + "<p>" + courseTwo.duration + "</p>" + "<p>" + courseTwo.cost + "</p>" + "<button id='button_add2' value='250'> + </button>" + "<button id='button_sub2' value='250'> - </button>";
+    document.getElementById("course3").innerHTML = "<h2 class='demo_head'>" + courseThree.title + "</h2>" + "<p>" + courseThree.description + "</p>" + "<p>" + courseThree.duration + "</p>" + "<p>" + courseThree.cost + "</p>" + "<button id='button_add3' value='250'> + </button>" + "<button id='button_sub3' value='250'> - </button>";
+    document.getElementById("course4").innerHTML = "<h2 class='demo_head'>" + courseFour.title + "</h2>" + "<p>" + courseFour.description + "</p>" + "<p>" + courseFour.duration + "</p>" + "<p>" + courseFour.cost + "</p>" + "<button id='button_add4' value='960'> + </button>" + "<button id='button_sub4' value='960'> - </button>";
+    document.getElementById("course5").innerHTML = "<h2 class='demo_head'>" + courseFive.title + "</h2>" + "<p>" + courseFive.description + "</p>" + "<p>" + courseFive.duration + "</p>" + "<p>" + courseFive.cost + "</p>" + "<button id='button_add5' value='250'> + </button>" + "<button id='button_sub5' value='250'> - </button>";
+    document.getElementById("course6").innerHTML = "<h2 class='demo_head'>" + courseSix.title + "</h2>" + "<p>" + courseSix.description + "</p>" + "<p>" + courseSix.duration + "</p>" + "<p>" + courseSix.cost + "</p>" + "<button id='button_add6' value='1800'> + </button>" + "<button id='button_sub6' value='1800'> - </button>";
+    document.getElementById("course7").innerHTML = "<h2 class='demo_head'>" + courseSeven.title + "</h2>" + "<p>" + courseSeven.description + "</p>" + "<p>" + courseSeven.duration + "</p>" + "<p>" + courseSeven.cost + "</p>" + "<button id='button_add7' value='1800'> + </button>" + "<button id='button_sub7' value='1800'> - </button>";
+    document.getElementById("course8").innerHTML = "<h2 class='demo_head'>" + courseEight.title + "</h2>" + "<p>" + courseEight.description + "</p>" + "<p>" + courseEight.duration + "</p>" + "<p>" + courseEight.cost + "</p>" + "<button id='button_add8' value='1800'> + </button>" + "<button id='button_sub8' value='1800'> - </button>";
+    document.getElementById("course9").innerHTML = "<h2 class='demo_head'>" + courseNine.title + "</h2>" + "<p>" + courseNine.description + "</p>" + "<p>" + courseNine.duration + "</p>" + "<p>" + courseNine.cost + "</p>" + "<button id='button_add9' value='1800'> + </button>" + "<button id='button_sub9' value='1800'> - </button>";
+    document.getElementById("course10").innerHTML = "<h2 class='demo_head'>" + courseTen.title + "</h2>" + "<p>" + courseTen.description + "</p>" + "<p>" + courseTen.duration + "</p>" + "<p>" + courseTen.cost + "</p>" + "<button id='button_add10' value='1200'> + </button>" + "<button id='button_sub10' value='1200'> - </button>";
+    document.getElementById("course11").innerHTML = "<h2 class='demo_head'>" + courseEleven.title + "</h2>" + "<p>" + courseEleven.description + "</p>" + "<p>" + courseEleven.duration + "</p>" + "<p>" + courseEleven.cost + "</p>" + "<button id='button_add11' value='1500'> + </button>" + "<button id='button_sub11' value='1500'> - </button>";
+    document.getElementById("course12").innerHTML = "<h2 class='demo_head'>" + courseTwelve.title + "</h2>" + "<p>" + courseTwelve.description + "</p>" + "<p>" + courseTwelve.duration + "</p>" + "<p>" + courseTwelve.cost + "</p>" + "<button id='button_add12' value='300'> + </button>" + "<button id='button_sub12' value='300'> - </button>";
+
+    $(function(){
+      $("#button_add1").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Intro to Coding: Web Pages - R250 </h4>" );
+      });
+      $("#button_sub1").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add2").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Intro to Coding: Music - R250 </h4>" );
+      });
+      $("#button_sub2").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add3").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Intro to Coding: Animation - R250 </h4>" );
+      });
+      $("#button_sub3").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add4").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Create with Code: Web Pages - R960 </h4>" );
+      });
+      $("#button_sub4").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add5").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Getting started as a developer - R250 </h4>" );
+      });
+      $("#button_sub5").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add6").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Beginner JavaScript - R1800 </h4>" );
+      });
+      $("#button_sub6").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add7").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Beginner Front End Web Development - R1800 </h4>" );
+      });
+      $("#button_sub7").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add8").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Beginner Python - R1200 </h4>" );
+      });
+      $("#button_sub8").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add9").click(function(){
+        $(".course_cart").append("<h4 id='course_head'Full Stack JavaScript - R1800 </h4>" );
+      });
+      $("#button_sub9").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add10").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Website Deployment - R250 </h4>" );
+      });
+      $("#button_sub10").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add11").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Industry Immersion - R1500 </h4>" );
+      });
+      $("#button_sub11").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+      $("#button_add12").click(function(){
+        $(".course_cart").append("<h4 id='course_head'> Digital Communication Skills - R300 </h4>" );
+      });
+      $("#button_sub12").click(function(){
+        $("#course_head").fadeOut(".course_cart");
+      });
+    });
+
+    var total = 0;
+
+    $(function(){
+      $("#button_add1, #button_add2,#button_add3,#button_add4,#button_add5,#button_add6,#button_add7,#button_add8,#button_add9,#button_add10,#button_add11,#button_add12").click(function(){
+        total = Number(total) + Number($(this).val());
+        $("#cart_total").text("Total:" + total);
+       });
+       $("#cart_total").text("Total:" + total);
+     });
+
+    </script>
+  </body>
+</html>
